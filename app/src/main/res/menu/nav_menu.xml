@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_schedule"
+        android:icon="@drawable/ic_schedule"
+        android:title="Schedule"/>
+
+    <item
+        android:id="@+id/nav_results"
+        android:icon="@drawable/ic_results"
+        android:title="Result"/>
+
+    <item
+        android:id="@+id/nav_sponcers"
+        android:icon="@drawable/ic_sponcers"
+        android:title="Sponcers"/>
+
+    <item
+        android:id="@+id/nav_team"
+        android:icon="@drawable/ic_team"
+        android:title="Team"/>
+
+    <item
+        android:id="@+id/nav_dev"
+        android:icon="@drawable/ic_dev"
+        android:title="Developers"/>
+
+    <item
+        android:id="@+id/nav_about_us"
+        android:icon="@drawable/ic_about_us"
+        android:title="About Us"/>
+
+    <item
+        android:id="@+id/nav_announcement"
+        android:icon="@drawable/ic_announcement"
+        android:title="Announcement"/>
+
+
+    <item
+        android:id="@+id/nav_photogallery"
+        android:icon="@drawable/ic_photogallery"
+        android:title="Photo Gallery"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</menu>
