@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home -> replaceFragment(HomeFragment(), it.title.toString())
                 R.id.nav_schedule -> replaceFragment(ScheduleFragment(), it.title.toString())
                 R.id.nav_results -> replaceFragment(ResultsFragment(), it.title.toString())
+             //   R.id.blank -> replaceFragment(BlankFragment(), it.title.toString())
                 R.id.nav_sponcers -> replaceFragment(SponcerFragment(), it.title.toString())
-                R.id.nav_team -> replaceFragment(TeamFragment(), it.title.toString())
                 R.id.nav_dev -> replaceFragment(DevFragment(), it.title.toString())
                 R.id.nav_about_us -> replaceFragment(AboutUsFragment(), it.title.toString())
                 R.id.nav_announcement -> replaceFragment(
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             true
         }
 //        getUserData()
-        replaceFragment(HomeFragment(), "Home fragment")
+        replaceFragment(HomeFragment(), "TECHSTORM 2.23")
     }
 
     private fun replaceFragment(fragment: Fragment, title: String) {

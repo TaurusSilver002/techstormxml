@@ -1,11 +1,14 @@
 package com.example.techstormxml
 
 import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.imageview.ShapeableImageView
 
@@ -35,7 +38,9 @@ class CardChildAdapter(private val itemCardList : List<ItemCard>) : RecyclerView
         holder.cardName.text = currentitem.strng
         holder.itemView.setOnClickListener {
             val a = currentitem.strng
-
+            val bundle = Bundle()
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://dev-koushikdas.github.io/techstorm2.23/index.html"))
+            startActivity(it!!.context,browserIntent,bundle)
             Toast.makeText(it!!.context, "You Clicked $a", Toast.LENGTH_SHORT).show()
         }
     }
