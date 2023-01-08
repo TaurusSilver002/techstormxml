@@ -6,11 +6,13 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/trans"
     app:cardElevation="8dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
 
 
             <TextView
@@ -22,7 +24,8 @@
                 android:text="Brain Teasers"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:paddingTop="5dp"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_child"
