@@ -1,5 +1,6 @@
 package com.example.techstormxml
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -39,7 +40,15 @@ class CardChildAdapter(private val itemCardList : List<ItemCard>) : RecyclerView
         holder.itemView.setOnClickListener {
             val a = currentitem.strng
             val bundle = Bundle()
-            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://dev-koushikdas.github.io/techstorm2.23/index.html"))
+            val browserIntent : Intent
+            if (currentitem.strng=="CODE-BEE") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.google.com"))
+            }
+            else{
+                browserIntent =Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.w3schools.com"))
+            }
+
             startActivity(it!!.context,browserIntent,bundle)
             Toast.makeText(it!!.context, "You Clicked $a", Toast.LENGTH_SHORT).show()
         }

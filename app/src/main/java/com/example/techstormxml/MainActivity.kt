@@ -1,5 +1,6 @@
 package com.example.techstormxml
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -75,7 +76,9 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
+    public fun getcontext() : Context{
+        return this@MainActivity
+    }
 //    private fun getUserData() {
 //        newRecyclerView = findViewById(R.id.recyclerview)
 //        newRecyclerView.apply {
