@@ -15,19 +15,7 @@ import com.google.android.material.imageview.ShapeableImageView
 
 
 class CardChildAdapter(private val itemCardList : List<ItemCard>) : RecyclerView.Adapter<CardChildAdapter.CardChildViewHolder>(){
-//
-//    private lateinit var mListener : onItemClickListener
-//
-//    interface onItemClickListener{
-//
-//        fun onItemClick(position : Int)
-//
-//    }
-//    fun setOnItemClickListener(listener: onItemClickListener){
-//
-//        mListener = listener
-//
-//    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):  CardChildViewHolder{
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_item,parent,false)
         return CardChildViewHolder(itemView)
@@ -45,8 +33,76 @@ class CardChildAdapter(private val itemCardList : List<ItemCard>) : RecyclerView
                 // block of code to be executed if the condition is true
                 browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.google.com"))
             }
+            else if (currentitem.strng=="OMEGATRIX") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.yahoo.com"))
+            }
+            else if (currentitem.strng=="OMEGATRIX") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.filehippo.com"))
+            }
+            else if (currentitem.strng=="WEB-O-LOGY") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.geeksforgeeks.com"))
+            }
+            else if (currentitem.strng=="TECHNOMANIA") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.leetcode.com"))
+            }
+            else if (currentitem.strng=="APP-MANIA") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.linkedin.com"))
+            }
+            else if (currentitem.strng=="RO NAVIGATOR") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.twitter.com"))
+            }
+            else if (currentitem.strng=="RO SOCCER") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.youtube.com"))
+            }
+            else if (currentitem.strng=="RO COMBAT(light)") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.instagram.com"))
+            }
+            else if (currentitem.strng=="RO COMBAT(light)") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.facebbok.com"))
+            }
+            else if (currentitem.strng=="RO COMBAT(heavy)") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.microsoft.com"))
+            }
+            else if (currentitem.strng=="RO-PUZZLE") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.pininterest.com"))
+            }
+            else if (currentitem.strng=="RO-TERRANCE") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.nasa.com"))
+            }
+            else if (currentitem.strng=="POWER PULL") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://dev-koushikdas.github.io/techstorm2.23/index.html"))
+            }
+            else if (currentitem.strng=="POWER PULL") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://dev-koushikdas.github.io/techstorm2.23/index.html"))
+            }
+            else if (currentitem.strng=="FIFA") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://dev-koushikdas.github.io/techstorm2.23/index.html"))
+            }
+            else if (currentitem.strng=="PES") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://dev-koushikdas.github.io/techstorm2.23/index.html"))
+            }
+            else if (currentitem.strng=="PASSION WITH REELS") {
+                // block of code to be executed if the condition is true
+                browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://dev-koushikdas.github.io/techstorm2.23/index.html"))
+            }
             else{
-                browserIntent =Intent(Intent.ACTION_VIEW, Uri.parse("http://wwww.w3schools.com"))
+                browserIntent =Intent(Intent.ACTION_VIEW, Uri.parse("https://dev-koushikdas.github.io/techstorm2.23/index.html"))
             }
 
             startActivity(it!!.context,browserIntent,bundle)
