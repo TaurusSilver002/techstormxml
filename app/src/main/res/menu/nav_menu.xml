@@ -24,10 +24,6 @@ xmlns:tools="http://schemas.android.com/tools"
         android:icon="@drawable/ic_sponcers"
         android:title="Sponcers"/>
 
-    <item
-        android:id="@+id/nav_team"
-        android:icon="@drawable/ic_team"
-        android:title="Team"/>
 
     <item
         android:id="@+id/nav_dev"

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background"
     tools:context=".AboutUsFragment">
 
 
@@ -11,10 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="About us"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="50dp"/>
+        android:text="B.P. Poddar Institute of Management and Technology presents you Techstorm 2.20 where we aim at diversifying the manifold fields of technology."
+        android:textStyle=""
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
 
 
 </FrameLayout>
